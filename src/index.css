@@ -1,0 +1,31 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  min-height: 100%;
+  min-width: 100%;
+  color-scheme: dark;
+  color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --primary-1-text: rgb(2, 55, 72);
+  --primary-1-bg: rgb(24, 102, 126);
+  --primary-2-text: rgb(110, 161, 179);
+  --primary-2-bg: rgb(76, 115, 129);
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}

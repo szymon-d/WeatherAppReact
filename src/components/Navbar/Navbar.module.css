@@ -1,0 +1,17 @@
+nav a {
+  border-radius: 10px;
+  padding: 10px;
+}
+
+nav a:hover {
+  color: var(--primary-1-text) !important;
+}
+
+.active {
+  color: var(--primary-1-text) !important;
+  font-weight: bold;
+}
+
+.navbarPrimary1 {
+  background-color: var(--primary-1-bg) !important;
+}

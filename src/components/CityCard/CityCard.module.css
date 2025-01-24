@@ -1,0 +1,30 @@
+.cardCustom {
+  min-height: 150px;
+  cursor: pointer;
+}
+
+.cardHeader {
+  min-height: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.cardSubTitle {
+  font-size: 20px;
+  font-style: bold;
+  color: var(--primary-2-text);
+}
+
+.badge {
+  padding: 10px;
+  border: 2px solid var(--primary-2-bg);
+  background-color: var(--primary-2-bg);
+  color: var(--primary-2-text);
+  border-radius: 5px;
+  margin: 4px;
+}
+
+.cardCountry {
+  min-width: 150px;
+  max-width: 30px;
+}
