@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "../Navbar/Navbar";
-import MainContent from "../MainContent/MainContent";
+import Home from "../Home/Home";
 import React, { createContext, useState, useContext, useRef } from "react";
 
 export default function Layout() {
@@ -9,7 +9,7 @@ export default function Layout() {
   return (
     <>
       <Navbar setSearchQuery={setSearchQuery}></Navbar>
-      <MainContent searchQuery={searchQuery}></MainContent>
+      <Home searchQuery={searchQuery}></Home>
     </>
   );
 }

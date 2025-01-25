@@ -1,12 +1,12 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import style from "./MainContent.module.css";
+import style from "./Home.module.css";
 import React, { useContext, useEffect, useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import CityCard from "../CityCard/CityCard";
 import LoadingScreen from "../LoadingScreen/LoadingScreen";
 import Error500 from "../Error500/Error500";
 
-export default function MainContent({ searchQuery }) {
+export default function Home({ searchQuery }) {
   //Hooks
   // const [data, setData] = useState({});
   // const [error, setError] = useState(null);
@@ -66,12 +66,17 @@ export default function MainContent({ searchQuery }) {
     return <LoadingScreen />;
   }
 
-  // if (cities.length == 0) {
-  //   return <div>Nothing</div>;
-  // }
-  // if (!isError) {
-  //   return <Error500 message={"Something is wrong123"}></Error500>;
-  // }
+  if (cities.length == 0 && !!searchQuery) {
+    return <Error500 message={"None place has been found."}></Error500>;
+  }
+
+  if (cities.length == 0 && !searchQuery) {
+    return <Error500 message={"Please type place name."}></Error500>;
+  }
+
+  if (isError) {
+    return <Error500 message={"Internal Error"}></Error500>;
+  }
 
   // //Fetch data from API
   // useEffect(() => {
