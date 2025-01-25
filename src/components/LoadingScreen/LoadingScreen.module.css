@@ -1,0 +1,12 @@
+.spinner {
+  color: var(--primary-1-bg);
+}
+
+.spinnerBig {
+  width: 40px;
+  height: 40px;
+}
+
+.loading {
+  font-size: 30px;
+}
