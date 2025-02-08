@@ -1,0 +1,4 @@
+.active {
+  background-color: var(--primary-2-bg) !important;
+  color: var(--primary-2-text) !important;
+}
