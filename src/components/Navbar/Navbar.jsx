@@ -84,7 +84,7 @@ export default function Navbar({ setSearchQuery }) {
       </div>
 
       <div className="ms-5 me-5 nav-item active">
-        <a className="nav-link">Login</a>
+        <a className="nav-link">Login1</a>
       </div>
     </nav>
   );
